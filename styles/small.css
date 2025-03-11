@@ -1,7 +1,7 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Open Sans', 'Georgia', serif, Arial, sans-serif;
+    margin: 1px;
+    padding: 1px;
     box-sizing: border-box;
 }
 
