@@ -1,0 +1,40 @@
+/* Styles for larger screens */
+@media screen and (min-width: 32.5em) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    nav {
+        width: auto;
+        margin-top: 0;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+    #hamburgerBtn {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #certificate {
+        grid-column: 1 / -1;
+    }
+
+    #course-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+}
