@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Springfield General Hospital",
+    "address": "800 Medical Center Dr, Springfield, IL 62701",
+    "phone": "(217) 555-1000",
+    "website": "https://www.springfieldgeneralhospital.org",
+    "image": "hospital.png",
+    "membershipLevel": 3,
+    "description": "Providing comprehensive healthcare services to the Springfield community for over 75 years.",
+    "hours": "Open 24/7",
+    "joinDate": "1998-05-12",
+    "socialMedia": {
+      "facebook": "springfieldgeneralhospital",
+      "twitter": "springfieldhosp"
+    },
+    "featured": true
+  },
+  {
+    "name": "First National Bank",
+    "address": "123 Financial Way, Springfield, IL 62704",
+    "phone": "(217) 555-2000",
+    "website": "https://www.firstnationalspringfield.com",
+    "image": "bank.png",
+    "membershipLevel": 3,
+    "description": "Your trusted financial partner offering personal and business banking solutions.",
+    "hours": "Mon-Fri: 9:00 AM - 5:00 PM, Sat: 9:00 AM - 12:00 PM",
+    "joinDate": "2001-11-03",
+    "socialMedia": {
+      "facebook": "firstnationalbank",
+      "linkedin": "first-national-bank-springfield"
+    },
+    "featured": true
+  },
+  {
+    "name": "Springfield Tech Solutions",
+    "address": "456 Innovation Pkwy, Springfield, IL 62703",
+    "phone": "(217) 555-3000",
+    "website": "https://www.springfieldtech.com",
+    "image": "tech.png",
+    "membershipLevel": 2,
+    "description": "Providing IT services and technology solutions for businesses of all sizes.",
+    "hours": "Mon-Fri: 8:00 AM - 6:00 PM",
+    "joinDate": "2015-03-17",
+    "socialMedia": {
+      "facebook": "springfieldtech",
+      "twitter": "spfldtech",
+      "linkedin": "springfield-tech-solutions"
+    },
+    "featured": false
+  },
+  {
+    "name": "Green Thumb Garden Center",
+    "address": "789 Bloom St, Springfield, IL 62702",
+    "phone": "(217) 555-4000",
+    "website": "https://www.greenthumbgarden.com",
+    "image": "garden.png",
+    "membershipLevel": 1,
+    "description": "Your one-stop shop for all gardening supplies, plants, and expert advice.",
+    "hours": "Mon-Sat: 8:00 AM - 7:00 PM, Sun: 10:00 AM - 5:00 PM",
+    "joinDate": "2019-02-28",
+    "socialMedia": {
+      "facebook": "greenthumbgarden",
+      "instagram": "greenthumb_garden"
+    },
+    "featured": false
+  },
+  {
+    "name": "Springfield Fitness Club",
+    "address": "321 Health Blvd, Springfield, IL 62706",
+    "phone": "(217) 555-5000",
+    "website": "https://www.springfieldfitness.com",
+    "image": "fitness.png",
+    "membershipLevel": 2,
+    "description": "State-of-the-art fitness facility offering personal training, group classes, and wellness programs.",
+    "hours": "Mon-Fri: 5:00 AM - 10:00 PM, Sat-Sun: 7:00 AM - 8:00 PM",
+    "joinDate": "2017-01-15",
+    "socialMedia": {
+      "facebook": "springfieldfitness",
+      "instagram": "springfield_fitness",
+      "twitter": "spfldfitness"
+    },
+    "featured": true
+  },
+  {
+    "name": "Main Street Cafe",
+    "address": "567 Main St, Springfield, IL 62701",
+    "phone": "(217) 555-6000",
+    "website": "https://www.mainstreetcafe.com",
+    "image": "cafe.png",
+    "membershipLevel": 1,
+    "description": "Cozy cafe serving fresh, locally-sourced breakfast and lunch options.",
+    "hours": "Mon-Fri: 6:00 AM - 3:00 PM, Sat-Sun: 7:00 AM - 2:00 PM",
+    "joinDate": "2020-06-10",
+    "socialMedia": {
+      "facebook": "mainstreetcafe",
+      "instagram": "mainst_cafe"
+    },
+    "featured": false
+  },
+  {
+    "name": "Springfield Auto Repair",
+    "address": "890 Mechanic Lane, Springfield, IL 62707",
+    "phone": "(217) 555-7000",
+    "website": "https://www.springfieldauto.com",
+    "image": "auto.png",
+    "membershipLevel": 1,
+    "description": "Family-owned auto repair shop providing quality service for all makes and models.",
+    "hours": "Mon-Fri: 8:00 AM - 6:00 PM, Sat: 8:00 AM - 2:00 PM",
+    "joinDate": "2018-09-22",
+    "socialMedia": {
+      "facebook": "springfieldauto"
+    },
+    "featured": false
+  },
+  {
+    "name": "Capital City Law Firm",
+    "address": "432 Justice Ave, Springfield, IL 62701",
+    "phone": "(217) 555-8000",
+    "website": "https://www.capitalcitylaw.com",
+    "image": "law.png",
+    "membershipLevel": 3,
+    "description": "Full-service law firm specializing in business, family, and personal injury law.",
+    "hours": "Mon-Fri: 9:00 AM - 5:00 PM",
+    "joinDate": "2010-04-15",
+    "socialMedia": {
+      "facebook": "capitalcitylaw",
+      "linkedin": "capital-city-law-firm",
+      "twitter": "capcitylaw"
+    },
+    "featured": true
+  }
+]
+

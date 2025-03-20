@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory page for the Springfield Chamber of Commerce, showcasing local businesses and organizations">
+    <meta name="author" content="Your Name">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Springfield Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+    
+    <title>Springfield Chamber of Commerce | Directory</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/normalizer.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/logo.svg" alt="Springfield Chamber of Commerce Logo" class="logo">
+                <h1>Springfield<br><span>Chamber of Commerce</span></h1>
+            </div>
+            <nav>
+                <button id="hamburger-btn" aria-label="Toggle Menu">
+                    <span>&#9776;</span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="directory-main">
+        <h2>Business Directory</h2>
+        <p class="directory-intro">Explore Springfield's vibrant business community. Our members are the backbone of our local economy.</p>
+        
+        <div class="filter-controls">
+            <select id="membership-filter">
+                <option value="all">All Membership Levels</option>
+                <option value="1">Standard Member</option>
+                <option value="2">Silver Member</option>
+                <option value="3">Gold Member</option>
+            </select>
+            
+            <select id="featured-filter">
+                <option value="all">All Businesses</option>
+                <option value="featured">Featured Businesses</option>
+            </select>
+        </div>
+        
+        <div class="view-controls">
+            <button id="grid-btn" class="active" aria-label="Grid View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </button>
+            <button id="list-btn" aria-label="List View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+            </button>
+        </div>
+        
+        <div id="directory-container" class="grid-view">
+            <!-- Member cards will be inserted here by JavaScript -->
+            <div class="loading"> 
+                <script>
+                    const listEl = document.querySelector("ul");
+                    fetch("./members.json")
+                    .then(res => res.json())
+                    .then(data => {
+                        data.forEach(post =>) {
+                            listEl.insertAdjacentHTML("beforeend", '<li><a href="' + post.url + '">' + post.title + '</a></li>');
+                        }
+                    });
+                </script>
+                <p>Loading Directory...</p>   
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="Springfield Chamber of Commerce Logo" class="logo">
+                <h3>Springfield Chamber of Commerce</h3>
+            </div>
+            
+            <div class="footer-contact">
+                <p>123 Main Street, Springfield, IL 62701</p>
+                <p>info@springfieldchamber.org</p>
+                <p>(217) 555-1234</p>
+            </div>
+            
+            <div class="footer-map">
+                <a href="https://maps.google.com" target="_blank">📍 Location Map</a>
+            </div>
+        </div>
+        
+        <div class="footer-base">
+            <p>&copy; <span id="current-year"></span> Springfield Chamber of Commerce | <span class="developer-name">Your Name</span> | WDD 231</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
+
