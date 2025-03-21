@@ -15,7 +15,7 @@
     <title>Springfield Chamber of Commerce | Directory</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/jpg" href="images/Soweto.jpg">
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="styles/directory.css">
@@ -33,8 +33,8 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <img src="images/logo.svg" alt="Springfield Chamber of Commerce Logo" class="logo">
-                <h1>Springfield<br><span>Chamber of Commerce</span></h1>
+                <img src="images/logsowetow.png" alt="Soweto Chamber of Commerce Logo" class="logo">
+                <h1>Soweto<br><span>Chamber of Commerce</span></h1>
             </div>
             <nav>
                 <button id="hamburger-btn" aria-label="Toggle Menu">
@@ -53,7 +53,7 @@
     
     <main class="directory-main">
         <h2>Business Directory</h2>
-        <p class="directory-intro">Explore Springfield's vibrant business community. Our members are the backbone of our local economy.</p>
+        <p class="directory-intro">Explore Soweto's vibrant business community. Our members are the backbone of our local economy.</p>
         
         <div class="filter-controls">
             <select id="membership-filter">
@@ -86,9 +86,9 @@
                     fetch("./members.json")
                     .then(res => res.json())
                     .then(data => {
-                        data.forEach(post =>) {
+                        data.forEach(post => {
                             listEl.insertAdjacentHTML("beforeend", '<li><a href="' + post.url + '">' + post.title + '</a></li>');
-                        }
+                        });
                     });
                 </script>
                 <p>Loading Directory...</p>   
@@ -99,13 +99,13 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/logo.svg" alt="Springfield Chamber of Commerce Logo" class="logo">
-                <h3>Springfield Chamber of Commerce</h3>
+                <img src="images/logsoweto.png" alt="Soweto Chamber of Commerce Logo" class="logo">
+                <h3>Soweto Chamber of Commerce</h3>
             </div>
             
             <div class="footer-contact">
-                <p>123 Main Street, Springfield, IL 62701</p>
-                <p>info@springfieldchamber.org</p>
+                <p>1036 Bakgatla Street, Soweto, Meadowlands</p>
+                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c45424a436c5f435b4958434f444d414e495e02435e4b">[email&#160;protected]</a></p>
                 <p>(217) 555-1234</p>
             </div>
             
@@ -115,11 +115,12 @@
         </div>
         
         <div class="footer-base">
-            <p>&copy; <span id="current-year"></span> Springfield Chamber of Commerce | <span class="developer-name">Your Name</span> | WDD 231</p>
+            <p>&copy; <span id="current-year"></span> Soweto Chamber of Commerce | <span class="developer-name">Boitumelo Hebert Meletse</span> | WDD 231</p>
             <p>Last Modified: <span id="last-modified"></span></p>
         </div>
     </footer>
     
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="scripts/directory.js"></script>
 </body>
 </html>
