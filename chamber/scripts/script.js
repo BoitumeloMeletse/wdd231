@@ -414,6 +414,24 @@ async function displaySpotlights() {
         website: "www.greenvalleyins.com",
         membershipLevel: "gold",
       },
+      {
+        "id": 4,
+        "name": "Springfield Community Bank",
+        "logo": "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/85/40/f6/8540f6d4-de61-4aa6-d221-50ffe2b6f6d7/source/512x512bb.jpg",
+        "phone": "(555) 234-5678",
+        "address": "321 Financial Way, Springfield",
+        "website": "www.springfieldbank.com",
+        "membershipLevel": "gold"
+      },
+      {
+        "id": 5,
+        "name": "Mountain View Realty",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_LwzsnTng7GM2ZXn0I-nJL5swefkDtUqUfw&s0",
+        "phone": "(555) 876-5432",
+        "address": "567 Summit Dr, Springfield",
+        "website": "www.mountainviewrealty.com",
+        "membershipLevel": "silver"
+      }
     ]
 
     // Randomly select 2-3 members from fallback data
