@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 Course Home Page">
+        <meta name="author" content="Boitumelo Hebert Meletse">
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Springfield Chamber of Commerce" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="images/falsmall.png" />
+        <meta property="og:url" content="https://www.springfieldchamber.org/index.html" />
+        <meta property="og:description" content="Connecting businesses, building community, and driving economic growth since 1985." />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>WDD 231 Course Home Page</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpg" href="images/falsmall.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/script.js" defer></script>
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="images/falsmall.png" alt="SpringfieldChamber of Commerce Logo" class="logo">
+                    <div class="logo-text">
+                        <h1>Springfield</h1>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+                <nav>
+                    <button id="menu-button" aria-label="Toggle Menu">
+                        <span class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                    <ul id="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="date-banner">
+                <span id="current-date"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Springfield Chamber of Commerce</h2>
+            <p>Connecting businesses, building community, and driving economic growth since 2025.</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="main-grid">
+            <!-- Events Section -->
+            <section class="events-section">
+                <h2>Current Events</h2>
+                <div class="event-card">
+                    <h3>Business Networking Breakfast</h3>
+                    <p class="event-date"><i class="far fa-calendar"></i> March 25, 2025 • 7:30 AM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Springfield Grand Hotel</p>
+                    <p class="event-description">Connect with local business leaders over breakfast and hear from our guest speaker on digital marketing strategies.</p>
+                </div>
+                <div class="event-card">
+                    <h3>Small Business Workshop</h3>
+                    <p class="event-date"><i class="far fa-calendar"></i> April 2, 2025 • 1:00 PM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Community Center, Room 204</p>
+                    <p class="event-description">Learn essential strategies for small business growth and sustainability in our changing economy.</p>
+                </div>
+                <a href="#" class="view-all">View All Events</a>
+            </section>
+
+            <select id="featured-filter">
+                <option value="all">All Businesses</option>
+                <option value="featured">Featured Businesses</option>
+            </select>
+        </div>
+        
+        <div class="view-controls">
+            <button id="grid-btn" class="active" aria-label="Grid View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </button>
+            <button id="list-btn" aria-label="List View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+            </button>
+        </div>
+        <div id="directory-container" class="grid-view">
+        <section class="member-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlights-container">
+                <!-- member will be dynamically inserted here -->
+            </div>
+        </section>
+        
+            <div class="member"> 
+                <p>Loading Directory...</p>   
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/falsmall.png" alt="Springfield Chamber of Commerce Logo" class="logo">
+                    <div class="footer-address">
+                        <h3>Springfield Chamber of Commerce</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 527 E Capitol Ave, Springfield, IL 62701, United States</p>
+                        <p><i class="fas fa-envelope"></i> info@Springfieldchamber.org</p>
+                        <p><i class="fas fa-phone"></i> (+27) 61 467-2545</p>
+                        <p><i class="fas fa-location-dot"></i> <a href="#">Location Map</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="join.html">Join</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-resources">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Business Resources</a></li>
+                            <li><a href="#">Community Calendar</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Member Benefits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Springfield Chamber of Commerce | All Rights Reserved | Boitumelo Hebert Meletse</p>
+                <p>Last Updated: <span id="last-updated"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

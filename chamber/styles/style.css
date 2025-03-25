@@ -194,7 +194,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x600');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_396,q_75,w_704/v1/crm/lanecounty/Springfield-Chamber-of-Commerce-logo_5ed0befc-5056-b3a8-498d7565eb522d93.png');
     background-size: cover;
     background-position: center;
     color: white;

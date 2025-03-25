@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Directory page for the Springfield Chamber of Commerce, showcasing local businesses and organizations">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Boitumelo Hebert Meletse">
     
-    <!-- Facebook Open Graph Meta Tags -->
+    <!-- Meta Tags -->
     <meta property="og:title" content="Springfield Chamber of Commerce Directory">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/logo.svg">
-    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://boitumelomeletse..github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://boitumelomeletse.github.io/wdd231/chamber/directory.html">
     
     <title>Springfield Chamber of Commerce | Directory</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/jpg" href="images/Soweto.jpg">
+    <link rel="icon" type="image/jpg" href="images/falsmall.png">
     
     <!-- CSS Files -->
-    <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/normalizer.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <script src="scripts/directory.js" defer></script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <img src="images/logsowetow.png" alt="Soweto Chamber of Commerce Logo" class="logo">
-                <h1>Soweto<br><span>Chamber of Commerce</span></h1>
+                <img src="images/falsmall.png" alt="Springfield Chamber of Commerce Logo" class="logo">
+                <h1>Springfield<br><span>Chamber of Commerce</span></h1>
             </div>
             <nav>
                 <button id="hamburger-btn" aria-label="Toggle Menu">
@@ -53,21 +53,7 @@
     
     <main class="directory-main">
         <h2>Business Directory</h2>
-        <p class="directory-intro">Explore Soweto's vibrant business community. Our members are the backbone of our local economy.</p>
-        
-        <div class="filter-controls">
-            <select id="membership-filter">
-                <option value="all">All Membership Levels</option>
-                <option value="1">Standard Member</option>
-                <option value="2">Silver Member</option>
-                <option value="3">Gold Member</option>
-            </select>
-            
-            <select id="featured-filter">
-                <option value="all">All Businesses</option>
-                <option value="featured">Featured Businesses</option>
-            </select>
-        </div>
+        <p class="directory-intro">Explore Springfield's vibrant business community. Our members are the backbone of our local economy.</p>
         
         <div class="view-controls">
             <button id="grid-btn" class="active" aria-label="Grid View">
@@ -80,33 +66,21 @@
         
         <div id="directory-container" class="grid-view">
             <!-- Member cards will be inserted here by JavaScript -->
-            <div class="loading"> 
-                <script>
-                    const listEl = document.querySelector("ul");
-                    fetch("./members.json")
-                    .then(res => res.json())
-                    .then(data => {
-                        data.forEach(post => {
-                            listEl.insertAdjacentHTML("beforeend", '<li><a href="' + post.url + '">' + post.title + '</a></li>');
-                        });
-                    });
-                </script>
-                <p>Loading Directory...</p>   
-            </div>
+            <div class="loading">Loading directory data...</div>
         </div>
     </main>
     
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/logsoweto.png" alt="Soweto Chamber of Commerce Logo" class="logo">
-                <h3>Soweto Chamber of Commerce</h3>
+                <img src="images/falsmall.png" alt="Springfield Chamber of Commerce Logo" class="logo">
+                <h3>Springfield Chamber of Commerce</h3>
             </div>
             
             <div class="footer-contact">
-                <p>1036 Bakgatla Street, Soweto, Meadowlands</p>
-                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c45424a436c5f435b4958434f444d414e495e02435e4b">[email&#160;protected]</a></p>
-                <p>(217) 555-1234</p>
+                <p>527 E Capitol Ave, Springfield, IL 62701, United States</p>
+                <p>info@springfieldchamber.org</p>
+                <p>(+27) 61 467-2545</p>
             </div>
             
             <div class="footer-map">
@@ -115,13 +89,9 @@
         </div>
         
         <div class="footer-base">
-            <p>&copy; <span id="current-year"></span> Soweto Chamber of Commerce | <span class="developer-name">Boitumelo Hebert Meletse</span> | WDD 231</p>
+            <p>&copy; <span id="current-year"></span> Springfield Chamber of Commerce | <span class="developer-name">Your Name</span> | WDD 231</p>
             <p>Last Modified: <span id="last-modified"></span></p>
         </div>
     </footer>
-    
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="scripts/directory.js"></script>
 </body>
 </html>
-
