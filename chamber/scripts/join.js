@@ -1,24 +1,6 @@
 // Toggle navigation menu for mobile view
 document.getElementById('hamburger-btn').addEventListener('click', function() {
-    document.getElementById('primary-nav').classList.toggle('show');
-});
-
-// Directory functionality
-const gridBtn = document.getElementById('grid-btn');
-const listBtn = document.getElementById('list-btn');
-const directoryContainer = document.getElementById('directory-container');
-
-// Toggle between grid and list view
-gridBtn.addEventListener('click', function() {
-  directoryContainer.className = 'grid-view';
-  gridBtn.classList.add('active');
-  listBtn.classList.remove('active');
-});
-
-listBtn.addEventListener('click', function() {
-  directoryContainer.className = 'list-view';
-  listBtn.classList.add('active');
-  gridBtn.classList.remove('active');
+  document.getElementById('primary-nav').classList.toggle('show');
 });
 
 
@@ -29,12 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (timestampField) {
         timestampField.value = new Date().toISOString();
     }
-
-    document.getElementById('last-modified').textContent = document.lastModified;
-
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-
+    
     // Set current year in footer
     const currentYearElement = document.getElementById('currentYear');
     if (currentYearElement) {

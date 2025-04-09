@@ -31,19 +31,28 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <h1 class="logo">Chamber of Commerce</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Directory</a></li>
-                        <li><a href="join.html" class="active">Join</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="logo-container">
+                    <img src="images/falsmall.png" alt="SpringfieldChamber of Commerce Logo" class="logo">
+                    <div class="logo-text">
+                        <h1>Springfield</h1>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+            <nav>
+                <button id="hamburger-btn" aria-label="Toggle Menu">
+                    <span>&#9776;</span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" >Directory</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html"class="active">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
 
     <main>
         <div class="container">
@@ -72,30 +81,26 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h2>Chamber of Commerce</h2>
-                    <p>123 Main Street</p>
-                    <p>Anytown, USA 12345</p>
-                </div>
-                <div class="footer-section">
-                    <h2>Contact</h2>
-                    <p>info@chamber.org</p>
-                    <p>(555) 123-4567</p>
-                </div>
-                <div class="footer-section">
-                    <h2>Follow Us</h2>
-                    <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">LinkedIn</a>
-                    </div>
-                </div>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/falsmall.png" alt="Springfield Chamber of Commerce Logo" class="logo">
+                <h3>Springfield Chamber of Commerce</h3>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Chamber of Commerce. All rights reserved.</p>
+            
+            <div class="footer-contact">
+                <p>527 E Capitol Ave, Springfield, IL 62701, United States</p>
+                <p>info@springfieldchamber.org</p>
+                <p>(+27) 61 467-2545</p>
             </div>
+            
+            <div class="footer-map">
+                <a href="https://maps.google.com" target="_blank">📍 Location Map</a>
+            </div>
+        </div>
+        
+        <div class="footer-base">
+            <p>&copy; <span id="current-year"></span> Springfield Chamber of Commerce | <span class="developer-name">Boitumelo hebert Meletse</span> | WDD 231</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
         </div>
     </footer>
 </body>
