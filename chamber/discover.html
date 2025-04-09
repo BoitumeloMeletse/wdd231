@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 Course discover Page">
+        <meta name="author" content="Boitumelo Hebert Meletse">
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Springfield Chamber of Commerce" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="images/falsmall.png" />
+        <meta property="og:url" content="https://www.springfieldchamber.org/discover.html" />
+        <meta property="og:description" content="Connecting businesses, building community, and driving economic growth since 1985." />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>WDD 231 Course Home Page</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpg" href="images/falsmall.png">
+        <link rel="stylesheet" href="styles/discover.css">
+        <script src="scripts/discover.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Chamber of Commerce</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="discover.html" class="active">Discover</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Discover Our Area</h1>
+            
+            <div class="discover-container">
+                <!-- Sidebar with visitor information -->
+                <aside class="sidebar">
+                    <div class="visitor-info">
+                        <h2>Welcome Back!</h2>
+                        <p id="lastVisit">Loading visit information...</p>
+                    </div>
+                    
+                    <div class="area-info">
+                        <h2>Area Information</h2>
+                        <div class="info-item">
+                            <h3>Population</h3>
+                            <p>125,000 residents</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Founded</h3>
+                            <p>1872</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Average Income</h3>
+                            <p>$68,500</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Business Count</h3>
+                            <p>3,200+ registered businesses</p>
+                        </div>
+                    </div>
+                </aside>
+                
+                <!-- Grid of place cards -->
+                <section class="places-grid" id="placesGrid">
+                    <!-- Cards will be dynamically inserted here -->
+                    <div class="loading">Loading places of interest...</div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>Chamber of Commerce</h2>
+                    <p>123 Main Street</p>
+                    <p>Anytown, USA 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact</h2>
+                    <p>info@chamber.org</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Follow Us</h2>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Chamber of Commerce. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Template for place cards -->
+    <template id="place-card-template">
+        <div class="place-card">
+            <h2 class="place-title"></h2>
+            <figure class="place-image-container">
+                <img class="place-image" src="/placeholder.svg" alt="">
+            </figure>
+            <address class="place-address"></address>
+            <p class="place-description"></p>
+            <button class="btn btn-primary learn-more-btn">Learn More</button>
+        </div>
+    </template>
+</body>
+</html>

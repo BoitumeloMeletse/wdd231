@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Trail Explorers - Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Color Schema */
+        :root {
+            --primary-color: #2B6CB0; /* Blue */
+            --secondary-color: #48BB78; /* Green */
+            --accent-color: #F6AD55; /* Orange */
+            --dark-color: #1A365D; /* Dark Blue */
+            --light-color: #EBF8FF; /* Light Blue Background */
+            --text-color: #2D3748; /* Dark Gray for text */
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .color-sample {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .color-box {
+            width: 150px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .primary {
+            background-color: var(--primary-color);
+        }
+
+        .secondary {
+            background-color: var(--secondary-color);
+        }
+
+        .accent {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .dark {
+            background-color: var(--dark-color);
+        }
+
+        .light {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            border: 1px solid #ddd;
+        }
+
+        .font-sample {
+            margin-top: 1rem;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-opensans {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .wireframes {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .wireframes {
+                flex-direction: row;
+            }
+        }
+
+        .wireframe {
+            flex: 1;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .wireframe img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .scenario {
+            background-color: var(--light-color);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            background-color: var(--light-color);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        blockquote {
+            font-family: 'Roboto Slab', serif;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1rem;
+            margin-left: 0;
+            color: var(--dark-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mountain Trail Explorers</h1>
+        <p>Site Plan Document</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Mountain Trail Explorers</strong></p>
+            <p>This name was selected because it clearly communicates the focus of the website - exploring mountain trails. The name evokes a sense of adventure and discovery while being descriptive enough to immediately convey the site's purpose to visitors. The word "Explorers" suggests a community aspect, implying that the site is for people who actively seek out and enjoy mountain trails.</p>
+            <p>Optional domain availability: mountaintrailexplorers.com or trail-explorers.org</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The Mountain Trail Explorers website will serve as a comprehensive resource for hiking and outdoor enthusiasts looking to explore mountain trails. The site will provide:</p>
+            <ul>
+                <li>A searchable database of mountain trails with detailed information including difficulty ratings, elevation profiles, distance, estimated completion time, and trail features</li>
+                <li>Interactive trail maps with markers for key points of interest, rest areas, water sources, and scenic viewpoints</li>
+                <li>Real-time weather updates and forecasts for trail areas to help hikers plan their trips safely</li>
+                <li>User-generated reviews, photos, and current trail condition reports</li>
+                <li>Educational content for hikers of all experience levels, including safety tips, gear recommendations, and environmental conservation practices</li>
+                <li>A community forum where hikers can connect, organize group hikes, and share experiences</li>
+            </ul>
+            <p>The primary goal is to make mountain hiking more accessible and safer by providing accurate, up-to-date information in an easy-to-use format, while fostering a community of responsible outdoor enthusiasts.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <div class="scenario">
+                <p><strong>Scenario 1:</strong> "I'm a beginner hiker looking for trails suitable for my experience level. What are some easy to moderate trails near me that offer good views but aren't too challenging?"</p>
+            </div>
+            <div class="scenario">
+                <p><strong>Scenario 2:</strong> "I'm planning a day hike this weekend, but I'm concerned about the weather. What are the current trail conditions and weather forecast for the Mount Wilson trail, and are there any reported hazards I should be aware of?"</p>
+            </div>
+            <div class="scenario">
+                <p><strong>Scenario 3:</strong> "I'm an experienced hiker looking for challenging trails with significant elevation gain. Which trails in the Rocky Mountains offer the most rewarding summit views and what technical gear might I need?"</p>
+            </div>
+            <div class="scenario">
+                <p><strong>Scenario 4:</strong> "I'm hiking with my dog next weekend. Which trails are pet-friendly and have water sources along the route where my dog can drink?"</p>
+            </div>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The color scheme is inspired by nature and the outdoors, creating a fresh, trustworthy feel that reflects the mountain hiking experience.</p>
+            
+            <div class="color-sample">
+                <div class="color-box primary">
+                    <span>#2B6CB0</span>
+                    <span>Primary Blue</span>
+                </div>
+                <div class="color-box secondary">
+                    <span>#48BB78</span>
+                    <span>Secondary Green</span>
+                </div>
+                <div class="color-box accent">
+                    <span>#F6AD55</span>
+                    <span>Accent Orange</span>
+                </div>
+                <div class="color-box dark">
+                    <span>#1A365D</span>
+                    <span>Dark Blue</span>
+                </div>
+                <div class="color-box light">
+                    <span>#EBF8FF</span>
+                    <span>Light Blue</span>
+                </div>
+            </div>
+
+            <h3>Color Application</h3>
+            <ul>
+                <li><strong>Primary Blue (#2B6CB0):</strong> Main header background, primary buttons, and key interactive elements. This color represents the sky and water elements found in mountain environments.</li>
+                <li><strong>Secondary Green (#48BB78):</strong> Section headings underlines, success messages, and elements related to trail information. This color represents the forests and vegetation of mountain trails.</li>
+                <li><strong>Accent Orange (#F6AD55):</strong> Call-to-action elements, highlighted information, and warning indicators. This warm color provides contrast and draws attention to important elements.</li>
+                <li><strong>Dark Blue (#1A365D):</strong> Footer background, headings, and text links. This deeper blue provides strong contrast for important text elements.</li>
+                <li><strong>Light Blue (#EBF8FF):</strong> Page background, card backgrounds, and secondary information panels. This subtle blue creates a clean, airy feel reminiscent of mountain atmospheres.</li>
+                <li><strong>Text Color (#2D3748):</strong> Main body text for optimal readability against light backgrounds.</li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The typography selection aims to create a clean, modern look that is highly readable while conveying a sense of adventure and reliability.</p>
+
+            <div class="font-sample">
+                <h3 class="font-montserrat">Montserrat</h3>
+                <p class="font-montserrat">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890</p>
+                <p><strong>Usage:</strong> All headings (h1-h6), navigation items, and buttons. This bold, geometric sans-serif font provides a modern, clean look that stands out for important text elements and conveys reliability.</p>
+            </div>
+
+            <div class="font-sample">
+                <h3 class="font-opensans">Open Sans</h3>
+                <p class="font-opensans">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890</p>
+                <p><strong>Usage:</strong> Body text, paragraphs, and general content. This highly readable sans-serif font ensures good legibility across devices and screen sizes, even in smaller text sizes used for trail descriptions and details.</p>
+            </div>
+
+            <div class="font-sample">
+                <h3 class="font-roboto">Roboto Slab</h3>
+                <p class="font-roboto">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890</p>
+                <p><strong>Usage:</strong> Featured quotes, testimonials, and special callout sections. This slab serif font adds visual interest and a touch of ruggedness appropriate for an outdoor adventure website.</p>
+                <blockquote>Example: "The mountains are calling and I must go." - John Muir</blockquote>
+            </div>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Below are wireframes for the home page in both mobile and desktop views.</p>
+
+            <div class="wireframes">
+                <div class="wireframe">
+                    <h3>Mobile View</h3>
+                    <img src="https://placeholder.svg?height=600&width=300&text=Mobile+Wireframe" alt="Mobile wireframe showing a vertical layout with header, search bar, featured trails section, and navigation menu at bottom">
+                    <ul>
+                        <li>Header with logo and hamburger menu</li>
+                        <li>Search bar with location and difficulty filters</li>
+                        <li>Featured trails carousel</li>
+                        <li>Weather alerts section</li>
+                        <li>Recent trail reports</li>
+                        <li>Quick access categories (Easy Trails, Dog-Friendly, etc.)</li>
+                        <li>Bottom navigation for quick access to key features</li>
+                    </ul>
+                </div>
+
+                <div class="wireframe">
+                    <h3>Desktop View</h3>
+                    <img src="https://placeholder.svg?height=400&width=600&text=Desktop+Wireframe" alt="Desktop wireframe showing a horizontal layout with header, sidebar navigation, map, and trail listings">
+                    <ul>
+                        <li>Header with logo and main navigation</li>
+                        <li>Hero section with search functionality and filters</li>
+                        <li>Interactive map beside trail listings</li>
+                        <li>Featured trails in 3-column grid</li>
+                        <li>Weather conditions panel</li>
+                        <li>Community highlights section</li>
+                        <li>Recent trail reports and photos</li>
+                        <li>Footer with additional links and resources</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mountain Trail Explorers Site Plan</p>
+    </footer>
+</body>
+</html>
