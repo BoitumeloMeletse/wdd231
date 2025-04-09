@@ -12,6 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchPlaces();
 });
 
+// Toggle navigation menu for mobile view
+document.getElementById('hamburger-btn').addEventListener('click', function() {
+  document.getElementById('primary-nav').classList.toggle('show');
+});
+
+    // Modal functionality
+    const viewBenefitsBtns = document.querySelectorAll('.view-benefits-btn');
+    const closeModalBtns = document.querySelectorAll('.close-modal, .close-btn');
+    const modalOverlay = document.getElementById('modalOverlay');
+   
+    
+
 // Function to handle last visit message
 function displayLastVisit() {
     const lastVisitElement = document.getElementById('lastVisit');
