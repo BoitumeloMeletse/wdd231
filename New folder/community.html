@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our hiking community to share trail reports, photos, and connect with fellow hikers. Get involved in group hikes and conservation efforts.">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Hiking Community | Mountain Trail Explorers">
+    <meta property="og:description" content="Connect with fellow hikers, share trail reports, and join group hikes.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/mountain-trail-explorers/community.html">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Community | Mountain Trail Explorers</title>
+    
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Defer JavaScript -->
+    <script src="scripts/community.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Mountain Trail Explorers Logo" class="logo">
+                <h1>Mountain Trail Explorers</h1>
+            </div>
+            <nav>
+                <button id="menu-button" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trails.html">Find Trails</a></li>
+                    <li><a href="community.html" class="active">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="community-hero">
+            <div class="container">
+                <h2>Join Our Hiking Community</h2>
+                <p>Connect with fellow hikers, share your experiences, and discover new trails together.</p>
+            </div>
+        </section>
+
+        <section class="trail-reports-section">
+            <div class="container">
+                <h2>Recent Trail Reports</h2>
+                <div id="community-reports" class="community-reports-grid">
+                    <!-- Trail reports will be dynamically inserted here -->
+                    <p class="loading">Loading trail reports...</p>
+                </div>
+                <button id="add-report-btn" class="primary-button">Share Your Trail Report</button>
+            </div>
+        </section>
+
+        <section class="upcoming-hikes">
+            <div class="container">
+                <h2>Upcoming Group Hikes</h2>
+                <div id="events-container" class="events-grid">
+                    <!-- Events will be dynamically inserted here -->
+                    <p class="loading">Loading upcoming hikes...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-community">
+            <div class="container">
+                <h2>Become a Member</h2>
+                <p>Join our community to post trail reports, participate in group hikes, and connect with other hikers.</p>
+                <form id="join-form" class="join-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" id="email-address" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience-level">Hiking Experience</label>
+                        <select id="experience-level" name="experienceLevel" required>
+                            <option value="">Select your experience level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="favorite-trails">Favorite Trails (optional)</label>
+                        <textarea id="favorite-trails" name="favoriteTrails" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="notifications">
+                            <input type="checkbox" id="notifications" name="notifications" checked>
+                            Receive notifications about new trails and events
+                        </label>
+                    </div>
+                    <button type="submit" class="primary-button">Join Community</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mountain Trail Explorers</h3>
+                    <p>Your guide to the best hiking trails and outdoor adventures.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="trails.html">Find Trails</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mountain Trail Explorers | <a href="attributions.html">Attributions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Template for Adding Trail Report -->
+    <div id="report-modal" class="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Share Your Trail Report</h2>
+                <button id="report-modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <form id="trail-report-form">
+                    <div class="form-group">
+                        <label for="trail-name">Trail Name</label>
+                        <input type="text" id="trail-name" name="trailName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-hiked">Date Hiked</label>
+                        <input type="date" id="date-hiked" name="dateHiked" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trail-conditions">Trail Conditions</label>
+                        <select id="trail-conditions" name="trailConditions" required>
+                            <option value="">Select condition</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="fair">Fair</option>
+                            <option value="poor">Poor</option>
+                            <option value="hazardous">Hazardous</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="report-description">Description</label>
+                        <textarea id="report-description" name="reportDescription" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="report-image">Upload Image (optional)</label>
+                        <input type="file" id="report-image" name="reportImage" accept="image/*">
+                    </div>
+                    <button type="submit" class="primary-button">Submit Report</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

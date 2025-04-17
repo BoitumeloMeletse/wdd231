@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find and explore hiking trails with our comprehensive database of mountain trails, complete with difficulty ratings, maps, and user reviews.">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Find Trails | Mountain Trail Explorers">
+    <meta property="og:description" content="Search our database of hiking trails with filters for difficulty, length, and features.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/mountain-trail-explorers/trails.html">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Find Trails | Mountain Trail Explorers</title>
+    
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Defer JavaScript -->
+    <script src="scripts/trails.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Mountain Trail Explorers Logo" class="logo">
+                <h1>Mountain Trail Explorers</h1>
+            </div>
+            <nav>
+                <button id="menu-button" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trails.html" class="active">Find Trails</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="trail-search">
+            <div class="container">
+                <h2>Find Your Perfect Trail</h2>
+                <form id="advanced-search-form" class="advanced-search-form">
+                    <div class="search-filters">
+                        <div class="filter-group">
+                            <label for="location-search">Location</label>
+                            <input type="text" id="location-search" placeholder="City, State, or Trail Name">
+                        </div>
+                        <div class="filter-group">
+                            <label for="difficulty-filter">Difficulty</label>
+                            <select id="difficulty-filter">
+                                <option value="">All Difficulties</option>
+                                <option value="easy">Easy</option>
+                                <option value="moderate">Moderate</option>
+                                <option value="difficult">Difficult</option>
+                                <option value="very-difficult">Very Difficult</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="length-filter">Length (miles)</label>
+                            <select id="length-filter">
+                                <option value="">Any Length</option>
+                                <option value="0-3">Under 3 miles</option>
+                                <option value="3-5">3-5 miles</option>
+                                <option value="5-10">5-10 miles</option>
+                                <option value="10+">10+ miles</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="features-filter">Features</label>
+                            <select id="features-filter">
+                                <option value="">Any Features</option>
+                                <option value="waterfall">Waterfall</option>
+                                <option value="lake">Lake</option>
+                                <option value="views">Scenic Views</option>
+                                <option value="forest">Forest</option>
+                                <option value="wildflowers">Wildflowers</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="search-button">Search Trails</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="trail-results">
+            <div class="container">
+                <h2>Trail Results</h2>
+                <div id="trail-results-container" class="trails-grid">
+                    <!-- Trail results will be dynamically inserted here -->
+                    <p class="loading">Search for trails to see results...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trail-map">
+            <div class="container">
+                <h2>Trail Map</h2>
+                <div id="map-container" class="map-container">
+                    <!-- Map will be dynamically inserted here -->
+                    <p class="map-placeholder">Interactive map will display here after search</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mountain Trail Explorers</h3>
+                    <p>Your guide to the best hiking trails and outdoor adventures.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="trails.html">Find Trails</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mountain Trail Explorers | <a href="attributions.html">Attributions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <div id="modal-container" class="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">Trail Details</h2>
+                <button id="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div id="modal-content" class="modal-content">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

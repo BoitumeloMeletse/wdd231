@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Mountain High Outfitters",
+    "logo": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFi-zduCFcIfA/articleshare-shrink_800/articleshare-shrink_800/0/1719884407781?e=2147483647&v=beta&t=iBHNa63EFURmUMroHtELZLh5PJcoY3-CliwXckJWh5w",
+    "phone": "(555) 123-4567",
+    "address": "123 Alpine Way, Boulder, CO",
+    "website": "www.mountainhighoutfitters.com",
+    "membershipLevel": "gold",
+    "description": "Your one-stop shop for all hiking and outdoor equipment needs."
+  },
+  {
+    "id": 2,
+    "name": "Lowveld Trails",
+    "logo": "https://www.lowveldtrails.co.za/wp-content/uploads/2023/08/FGASA-Logo.png",
+    "phone": "(555) 987-6543",
+    "address": "456 Summit Rd, Seattle, WA",
+    "website": "www.lowveldtrails.co.za",
+    "membershipLevel": "gold",
+    "description": "Professional guides for mountain trails and wilderness adventures."
+  },
+  {
+    "id": 3,
+    "name": "Alpine Photography",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdqbpLvD9ri4Y8xlPKie7Hy089Sd9oC5NSA&s",
+    "phone": "(555) 456-7890",
+    "address": "789 Vista Dr, Portland, OR",
+    "website": "www.alpinephotography.com",
+    "membershipLevel": "silver",
+    "description": "Capturing the beauty of mountain landscapes and trail adventures."
+  },
+  {
+    "id": 4,
+    "name": "Wilderness First Aid",
+    "logo": "https://www.mountaineers.org/locations-lodges/seattle-branch/committees/seattle-first-aid-committee/course-templates/in-person-wfa/wilderness-first-aid-wfa-inperson-2024/@@images/image",
+    "phone": "(555) 234-5678",
+    "address": "321 Safety Ln, Denver, CO",
+    "website": "www.wildernessfirstaid.org",
+    "membershipLevel": "gold",
+    "description": "Training and certification for outdoor emergency response."
+  },
+  {
+    "id": 5,
+    "name": "Mountain Cafe",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTinrtIN5FI3RFqHpP8ArZxIzpLAXeh1kpX6Q&s",
+    "phone": "(555) 876-5432",
+    "address": "567 Trailhead Ave, Aspen, CO",
+    "website": "www.mountaincafe.com",
+    "membershipLevel": "silver",
+    "description": "Fuel up before your hike with our hearty breakfasts and trail lunches."
+  },
+  {
+    "id": 6,
+    "name": "Peak Performance Fitness",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5cugPsnDGWK4HgUtx3Uqc2CaX-WC68roMBg&s",
+    "phone": "(555) 345-6789",
+    "address": "890 Elevation St, Salt Lake City, UT",
+    "website": "www.peakperformancefitness.com",
+    "membershipLevel": "silver",
+    "description": "Training programs designed specifically for hikers and mountain athletes."
+  },
+  {
+    "id": 7,
+    "name": "Trailside Lodge",
+    "logo": "https://img1.wsimg.com/isteam/ip/b3b7f8b1-0eeb-4d68-8c0c-27908a394156/TL%20Logo.png",
+    "phone": "(555) 654-3210",
+    "address": "432 Forest Rd, Jackson, WY",
+    "website": "www.trailsidelodge.com",
+    "membershipLevel": "gold",
+    "description": "Comfortable accommodations located near popular trailheads."
+  },
+  {
+    "id": 8,
+    "name": "Mountain Rescue Team",
+    "logo": "https://www.giscorps.org/wp-content/uploads/2019/02/Mra-Blue-Large-1024x1024.jpg?6bfec1&6bfec1",
+    "phone": "(555) 789-0123",
+    "address": "901 Emergency Way, Bozeman, MT",
+    "website": "www.mountainrescueteam.org",
+    "membershipLevel": "gold",
+    "description": "Volunteer organization dedicated to mountain safety and rescue operations."
+  }
+]
