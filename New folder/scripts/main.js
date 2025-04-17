@@ -689,40 +689,37 @@ function getMockReports() {
         {
             id: 3,
             userName: "Emily Rodriguez",
-            userAvatar: "https://images.icon-icons.com/2643/PNG/512/avatar_female_woman_person_people_white_tone_icon_159360.pngg",
+            userAvatar: "https://images.icon-icons.com/2643/PNG/512/avatar_female_woman_person_people_white_tone_icon_159360.png",
             trailName: "Summit Ridge Trail",
             date: "2023-06-10T08:15:00",
             content: "Warning: There's still snow on the upper portion of the trail. Microspikes and trekking poles are highly recommended. The final push to the summit is challenging but worth it for the panoramic views.",
           },
           {
-            "id": 4,
-            "userName": "David Wilson",
-            "userAvatar": "images/avatar-4.jpg",
-            "trailName": "Cascade Falls Trail",
-            "date": "2023-06-08T11:20:00",
-            "content": "The waterfall is flowing strong right now! The trail is a bit crowded on weekends, so I recommend going early in the morning or on a weekday if possible. Easy hike with a big payoff at the end.",
-            "imageUrl": "images/report-4.jpg",
-            "conditions": "good"
+            id: 4,
+            userName: "David Wilson",
+            userAvatar: "https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Clip-Art-Transparent-PNG.png",
+            trailName: "Cascade Falls Trail",
+            date: "2023-06-08T11:20:00",
+            content: "The waterfall is flowing strong right now! The trail is a bit crowded on weekends, so I recommend going early in the morning or on a weekday if possible. Easy hike with a big payoff at the end.",
+            conditions: "good"
           },
           {
-            "id": 5,
-            "userName": "Lisa Park",
-            "userAvatar": "images/avatar-5.jpg",
-            "trailName": "Emerald Lake Trail",
-            "date": "2023-06-05T09:15:00",
-            "content": "All three lakes are stunning right now. The trail between Dream Lake and Emerald Lake still has some snow patches, but they're easy to navigate. Saw lots of marmots and even a moose near the lake!",
-            "imageUrl": "images/report-5.jpg",
-            "conditions": "good"
+            id: 5,
+            userName: "Lisa Park",
+            userAvatar: "https://images.icon-icons.com/2643/PNG/512/avatar_female_woman_person_people_white_tone_icon_159360.png",
+            trailName: "Emerald Lake Trail",
+            date: "2023-06-05T09:15:00",
+            content: "All three lakes are stunning right now. The trail between Dream Lake and Emerald Lake still has some snow patches, but they're easy to navigate. Saw lots of marmots and even a moose near the lake!",
+            conditions: "good"
           },
           {
-            "id": 6,
-            "userName": "James Thompson",
-            "userAvatar": "images/avatar-6.jpg",
-            "trailName": "Granite Peak Trail",
-            "date": "2023-06-02T07:30:00",
-            "content": "This is NOT a trail for beginners or the faint of heart. The last mile requires some scrambling and there's significant exposure in places. The views from the top are incredible, but be prepared and bring plenty of water.",
-            "imageUrl": "images/report-6.jpg",
-            "conditions": "hazardous"
+            id: 6,
+            userName: "James Thompson",
+            userAvatar: "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png",
+            trailName: "Granite Peak Trail",
+            date: "2023-06-02T07:30:00",
+            content: "This is NOT a trail for beginners or the faint of heart. The last mile requires some scrambling and there's significant exposure in places. The views from the top are incredible, but be prepared and bring plenty of water.",
+            conditions: "hazardous"
           }
     ];
 }
